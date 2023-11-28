@@ -29,11 +29,11 @@
     <header class="p-2 text-center">
       <h1>Generaciones</h1>
     </header>
-    <main class="d-flex justify-content-center align-items-center">
-      <section class="container bg-dark p-4">
-        <h2 class="text-primary mb-4">Agregar Persona</h2>
+    <main class="d-flex flex-column justify-content-center align-items-center">
+      <section class="container bg-dark p-4 p-md-5 mt-4 rounded-4">
         <!-- Grilla del formulario -->
-        <article class="row">
+        <h2 class="text-primary mb-4">Agregar Persona</h2>
+        <article class="row justify-content-center">
           <div class="mb-3 col-md-4">
             <label for="inputNombre" class="form-label text-light"
               >Nombre:
@@ -73,26 +73,24 @@
             </select>
           </div>
           <div class="mb-3 col-md-2">
-            <label for="inputPeso" class="form-label text-light"
-              >Peso en Kg:
-            </label>
+            <label for="inputPeso" class="form-label text-light">Peso: </label>
             <input
               type="number"
               class="form-control"
               id="inputPeso"
-              placeholder="00"
+              placeholder="00 kg "
               min="0"
             />
           </div>
           <div class="mb-3 col-md-2">
             <label for="inputAltura" class="form-label text-light"
-              >Altura en cm:
+              >Altura:
             </label>
             <input
               type="number"
               class="form-control"
               id="inputAltura"
-              placeholder="00"
+              placeholder="00 cm"
               min="80"
             />
           </div>
@@ -108,7 +106,39 @@
               min="80"
             />
           </div>
+          <button type="button" class="btn btn-primary col-md-6 mt-4">
+            Agregar
+          </button>
         </article>
+      </section>
+
+      <!-- Funcionalidades -->
+      <section class="container bg-secondary rounded-4 mt-3">
+        <article class="row justify-content-center">
+          <button type="button" class="btn btn-success m-4 col-md-3">
+            Ver Generación
+          </button>
+          <button type="button" class="btn btn-warning m-4 col-md-3">
+            Ver Datos
+          </button>
+          <button type="button" class="btn btn-info m-4 col-md-3">
+            Ver Edad
+          </button>
+        </article>
+      </section>
+
+      <!-- Datos ingresados -->
+      <section class="container bg-light rounded-4 p-md-4 my-4">
+        <h2 class="text-primary mb-2">Datos Ingresados</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Nombre:</li>
+          <li class="list-group-item">Edad:</li>
+          <li class="list-group-item">Numero de DNI:</li>
+          <li class="list-group-item">Sexo:</li>
+          <li class="list-group-item">Peso:</li>
+          <li class="list-group-item">Altura:</li>
+          <li class="list-group-item">Fecha de Nacimiento:</li>
+        </ul>
       </section>
     </main>
     <footer>

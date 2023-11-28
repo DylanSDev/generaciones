@@ -30,7 +30,86 @@
       <h1>Generaciones</h1>
     </header>
     <main class="d-flex justify-content-center align-items-center">
-      <section class="container text-center"></section>
+      <section class="container bg-dark p-4">
+        <h2 class="text-primary mb-4">Agregar Persona</h2>
+        <!-- Grilla del formulario -->
+        <article class="row">
+          <div class="mb-3 col-md-4">
+            <label for="inputNombre" class="form-label text-light"
+              >Nombre:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputNombre"
+              placeholder="Escriba aquí el nombre..."
+            />
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="inputEdad" class="form-label text-light">Edad: </label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputEdad"
+              placeholder="Escriba aquí la edad..."
+            />
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="inputDni" class="form-label text-light"
+              >Número de DNI:</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="inputDni"
+              placeholder="Escriba aquí el DNI..."
+            />
+          </div>
+          <div class="mb-3 col-md-4 d-flex flex-column">
+            <label for="inputNombre" class="form-label text-light">Sexo:</label>
+            <select class="form-select">
+              <option value="1">Hombre</option>
+              <option value="2">Mujer</option>
+            </select>
+          </div>
+          <div class="mb-3 col-md-2">
+            <label for="inputPeso" class="form-label text-light"
+              >Peso en Kg:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputPeso"
+              placeholder="00"
+              min="0"
+            />
+          </div>
+          <div class="mb-3 col-md-2">
+            <label for="inputAltura" class="form-label text-light"
+              >Altura en cm:
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="inputAltura"
+              placeholder="00"
+              min="80"
+            />
+          </div>
+          <div class="mb-3 col-md-4">
+            <label for="inputAltura" class="form-label text-light"
+              >Fecha de Nacimiento
+            </label>
+            <input
+              type="date"
+              class="form-control"
+              id="inputAltura"
+              placeholder="00"
+              min="80"
+            />
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <div class="p-2 m-0 fw-medium text-center">
